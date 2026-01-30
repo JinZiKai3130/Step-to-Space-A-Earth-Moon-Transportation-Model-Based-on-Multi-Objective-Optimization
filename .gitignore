@@ -1,0 +1,276 @@
+# Python 特定文件
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Build and distribution directories
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+
+# Package metadata
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# Ruffle (Python debugger)
+.ruffle_cache/
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask
+instance/
+.webassets-cache
+
+# Scrapy
+.scrapy
+
+# Sphinx
+docs/_build/
+
+# PyBuilder
+target/
+
+
+# VS Code 特定文件
+
+.vscode/*
+/myenv/
+
+# VS Code 本地历史
+.history/
+
+# VS Code 工作区文件
+*.code-workspace
+
+
+# WSL/Ubuntu 特定文件
+
+# WSL2 的 VS Code Server 数据
+.vscode-server/
+
+# 临时文件
+*~
+*.tmp
+*.swp
+*.swo
+
+# 系统文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 目录元数据
+.directory
+
+
+# 敏感数据和配置文件
+
+# 环境变量和密钥
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*
+!.env.example
+
+# 密钥文件
+*.pem
+*.key
+*.cert
+*.crt
+
+配置文件（根据需要取消注释）
+config.ini
+config.yaml
+config.yml
+config.json
+
+
+# 项目特定文件
+
+# 数据库文件
+*.db
+*.sqlite
+*.sqlite3
+
+# 日志文件
+*.log
+logs/
+
+# 输出目录
+output/
+results/
+data/output/
+data/processed/
+
+# 缓存目录
+.cache/
+
+# 大型数据文件（根据项目需要调整）
+# *.csv
+# *.json
+# *.pickle
+# *.pkl
+# *.h5
+# *.hdf5
+# *.npy
+# *.npz
+# *.feather
+# *.parquet
+
+
+# 压缩文件
+*.zip
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+# 备份文件
+*.bak
+*.backup
+*.old
+
+# IDE 文件（除了 VS Code）
+.idea/
+*.iml
+.project
+.classpath
+.settings/
+
+# 操作系统临时文件
+*.tmp
+*.temp
+
+# 特定工具的配置文件
+# .pre-commit-config.yaml
+# .ruff.toml
+# .isort.cfg
+# .flake8
+# .pylintrc
+
+# 自定义规则示例：
+# 如果你的项目有特定需求，可以在这里添加
+
+# 忽略特定文件（举例）
+# secret_key.txt
+# private_config.py
+
+# 但保留配置文件示例
+# !config.example.yaml
+# !.env.example
+
+
+# 编译输出
+*.out
+*.exe
+*.bin
+*.app
+
+# 对象文件
+*.o
+*.ko
+*.obj
+*.elf
+
+# 预编译头
+*.gch
+*.pch
+
+# 库文件
+*.a
+*.lib
+*.so
+*.so.*
+*.dylib
+
+# 核心转储
+core
+*.core
+
+# 调试符号
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# 临时文件
+*~
+*.swp
+*.swo
+
+# 构建目录
+build/
+dist/
+bin/
+obj/
+out/
+target/
