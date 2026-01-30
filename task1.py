@@ -16,6 +16,8 @@ class MoonColonyTransport:
         self.rocket_launch_cost = 8.5e8
         self.rocket_maintenance_cost = 1.69e10
         
+        self.orbit_to_moon_cost_per_launch = 3.5e8
+        
         self.rocket_capacity_per_year = self.launches_per_year * self.rocket_capacity_per_launch
     
     def plan1_elevator_only(self) -> Tuple[float, float]:
@@ -23,7 +25,12 @@ class MoonColonyTransport:
         
         electricity_cost = self.total_mass * self.electricity_cost_per_ton
         maintenance_cost = time_years * self.elevator_maintenance_cost
-        total_cost = electricity_cost + maintenance_cost
+        elevator_cost = electricity_cost + maintenance_cost
+        
+        launches_needed_orbit_to_moon = self.total_mass / self.rocket_capacity_per_launch
+        orbit_to_moon_cost = launches_needed_orbit_to_moon * self.orbit_to_moon_cost_per_launch
+        
+        total_cost = elevator_cost + orbit_to_moon_cost
         
         return time_years, total_cost
     
@@ -50,17 +57,22 @@ class MoonColonyTransport:
         
         elevator_electricity_cost = elevator_mass * self.electricity_cost_per_ton
         elevator_maintenance_cost = total_time * self.elevator_maintenance_cost
+        elevator_cost = elevator_electricity_cost + elevator_maintenance_cost
+        
+        elevator_launches_needed = elevator_mass / self.rocket_capacity_per_launch
+        orbit_to_moon_cost = elevator_launches_needed * self.orbit_to_moon_cost_per_launch
         
         rocket_launches_needed = rocket_mass / self.rocket_capacity_per_launch
         rocket_launch_cost = rocket_launches_needed * self.rocket_launch_cost
         rocket_maintenance_cost = total_time * self.rocket_maintenance_cost
         
-        total_cost = (elevator_electricity_cost + elevator_maintenance_cost + 
+        total_cost = (elevator_cost + orbit_to_moon_cost + 
                       rocket_launch_cost + rocket_maintenance_cost)
         
         cost_breakdown = {
             'elevator_electricity': elevator_electricity_cost,
             'elevator_maintenance': elevator_maintenance_cost,
+            'orbit_to_moon_rocket': orbit_to_moon_cost,
             'rocket_launch': rocket_launch_cost,
             'rocket_maintenance': rocket_maintenance_cost
         }
@@ -80,13 +92,13 @@ class MoonColonyTransport:
         print("="*60)
         
         time1, cost1 = self.plan1_elevator_only()
-        print(f"\nPlan 1: Space Elevator Only")
+        print(f"\nPlan 1: Space Elevator Only (to orbit) + Rockets to Moon")
         print(f"  Transport Time: {time1:.2f} years")
         print(f"  Total Cost: ${cost1/1e12:.2f} trillion USD")
         print(f"  Annual Transport Capacity: {self.elevator_capacity_per_year:,.0f} tons/year")
         
         time2, cost2 = self.plan2_rocket_only()
-        print(f"\nPlan 2: Rockets Only")
+        print(f"\nPlan 2: Rockets Only (Earth to Moon)")
         print(f"  Transport Time: {time2:.2f} years")
         print(f"  Total Cost: ${cost2/1e12:.2f} trillion USD")
         print(f"  Annual Transport Capacity: {self.rocket_capacity_per_year:,.0f} tons/year")
