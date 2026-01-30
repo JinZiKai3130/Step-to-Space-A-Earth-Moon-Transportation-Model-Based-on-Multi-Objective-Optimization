@@ -12,7 +12,7 @@ class MoonColonyTransport:
         self.elevator_maintenance_cost = 1e8
         
         self.rocket_capacity_per_launch = 125
-        self.launches_per_year = 700
+        self.launches_per_year = 707.7585467098429
         self.rocket_launch_cost = 8.5e8
         self.rocket_maintenance_cost = 1.69e10
         
