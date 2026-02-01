@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 M = 1e8  # Total transport mass, metric tons
 # Annual transport capacity under ideal conditions (tons/year)
 E_elevator_perfect = 537000  # Space elevator (three harbors)
-E_rocket_perfect = 87500     # Rockets (all launch sites combined)
+E_rocket_perfect = 88450     # Rockets (all launch sites combined)
 
 # Cost parameters (USD)
 cost_elec_per_ton = 1900          # Elevator electricity cost, USD/ton
