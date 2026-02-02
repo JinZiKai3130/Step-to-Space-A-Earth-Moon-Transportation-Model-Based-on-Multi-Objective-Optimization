@@ -1,0 +1,48 @@
+核心数据来源链接：
+综合数据库与年度总结（主要来源）：
+
+《航天新闻》年度发射报告：每年发布详细的全球发射统计。
+
+示例：SpaceNews 2023 Launch Report
+
+Gunter‘s Space Page - 发射日志：极其详细的按年份、国家、火箭型号的发射记录。
+
+https://space.skyrocket.de/directories/launchlog.htm
+
+Jonathan’s Space Report：长期维护的航天器与发射任务目录。
+
+https://planet4589.org/space/log/launchlog.html
+
+Space-Track.org：需要注册，提供最权威的轨道物体和发射数据（尤其美国相关）。
+
+NASA 航天发射系统数据：
+
+https://www.nasa.gov/missions/station/iss-launch-schedule/ （部分历史数据）
+
+按发射场/国家的专门来源：
+
+美国（总体）：联邦航空管理局（FAA）年度商业航天报告。
+
+https://www.faa.gov/data/research/aviation/aerospace_forecasts
+
+俄罗斯/拜科努尔：Roscosmos官网新闻（俄语/英语）。
+
+https://www.roscosmos.ru/
+
+欧洲/法属圭亚那：Arianespace & ESA 年度回顾与新闻稿。
+
+https://www.arianespace.com/
+
+https://www.esa.int/
+
+印度：印度空间研究组织（ISRO）新闻与年报。
+
+https://www.isro.gov.in/
+
+中国：中国国家航天局（CNSA）新闻、新华社报道及《中国航天科技活动蓝皮书》。
+
+蓝皮书通常由《中国航天报》或相关研究院发布（需查找中文来源）。
+
+新西兰（Rocket Lab）：Rocket Lab公司官方网站的任务页面。
+
+https://www.rocketlabusa.com/missions/
